@@ -19,15 +19,15 @@ Kept in a dedicated companion repository so the main [`MLTQ/scuttle`](https://gi
 ## 10-Second Quickstart
 
 ```bash
-# 1. Install Scuttle (with 4-bit NF4 support = 1.70 GiB static VRAM, 100% accuracy retention)
-pip install "scuttle-search[quant] @ git+https://github.com/MLTQ/scuttle.git"
+# 1. Install Scuttle (defaults to 0.93 GiB pure-PyTorch 4-bit packed — no bitsandbytes needed!)
+pip install "scuttle-search @ git+https://github.com/MLTQ/scuttle.git"
 
 # 2. Clone these demo graphs
 git clone https://github.com/MLTQ/scuttle-demos.git
 cd scuttle-demos
 
 # 3. Run all three demos (US Federal Law, Wikispeedia, and local Markdown vault indexing)
-python run_demo.py --quant 4bit
+python run_demo.py
 ```
 
 Or try individual CLI commands:
